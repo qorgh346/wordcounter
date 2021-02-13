@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home.HTML</title>
+    <style>
+        *{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>안녕하세요 여기에 Word Count 서비스 입니다 ! </h1>
+    <a href="about/">ABOUT</a>
+    <form action="{% url 'result' %}">
+        <label for="text">입력 : </label>
+        <textarea name="full_text" id="text" cols="50" rows="20" placeholder="입력하세요"></textarea>
+        <input type="submit" value="제출하기">
+    </form>
+</body>
+</html>

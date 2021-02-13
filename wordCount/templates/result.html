@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>Full_Text : {{full_context}}</h2>
+        <a href="{% url 'home' %}">다시해보기.</a>
+        <h3>길이 : {{text_length}}</h3>
+    </div>
+    {% for key,value in result %}
+    <div>
+        {{key}} : {{value}}
+    </div>
+    {% endfor %}    
+</body>
+</html>
